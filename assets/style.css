@@ -1,44 +1,54 @@
 * {
-    background-color: rgb(226, 156, 123);
     display: flexbox;
 }
 
+body{
+    background-image: url(/repos/Portfolio-Site/assets/Artboard\ 1.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
 h1 {
     text-align: center;
     font-size: 400%;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
     border: 5px;
     border-color: rgb(27, 161, 194);
+    background-color: rgb(0, 59, 73);
     border-radius: 10px;
     border-style: outset;
     padding: 10px 20px;
-    max-width: 550px;
+    display: block;
+    max-width: max-content;
     margin: 0 auto;
 }
 
 h2 {
     font-size: 200%;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
     border: 5px;
     border-color: rgb(27, 161, 194);
+    background-color: rgb(0, 59, 73);
     border-radius: 10px;
     border-style: outset;
     padding: 5px 10px;
-    width: 100px;
-    display: block;
+    display: inline-block;
 }
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 20px auto;
     font-size: 200%;
     font-family: 'Courier New', Courier, monospace;
     padding: 5px 10px;
+    background: linear-gradient(0.25turn, #6ee2ff, #db5e5e);
+    max-width: 700px;
 }
 
 img.photo {
-    max-width: 30%;
+    max-width: 50%;
     display: block;
     margin: 10px auto;
     border: 5px;
@@ -51,12 +61,47 @@ img.photo {
 p {
     font-size: 150%;
     font-family: 'Courier New', Courier, monospace;
-    display: block;
+    color: white;
+    display: inline-block;
     justify-content: start;
     border: 5px;
     border-color: rgb(27, 161, 194);
+    background-color: rgb(0, 59, 73);
     border-radius: 10px;
     border-style: outset;
     padding: 5px 10px;
     margin: 0 auto;
+}
+
+.workcontainer{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100vmax;
+}
+
+.smallcard .cardpic{
+    flex-grow: 1;
+    max-width: 30vmax;
+}
+
+.largecard .cardpic{
+    flex-grow: 3;
+    width: 80vmax;
+}
+
+ul{
+    font-size: 150%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: block;
+    text-align: center;
+    border: 5px;
+    border-color: rgb(27, 161, 194);
+    background-color: rgb(0, 59, 73);
+    border-radius: 10px;
+    border-style: outset;
+    padding: 5px 10px;
+    margin: 0 auto;
+    list-style: none;
 }
