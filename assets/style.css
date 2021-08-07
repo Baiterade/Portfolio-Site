@@ -1,38 +1,60 @@
-*{
-    background-color: rgb(163, 163, 163);
+* {
+    background-color: rgb(226, 156, 123);
+    display: flexbox;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 400%;
     font-family: 'Courier New', Courier, monospace;
     border: 5px;
-    border-color: rgb(187, 187, 187);
+    border-color: rgb(27, 161, 194);
     border-radius: 10px;
     border-style: outset;
-    padding: 10px;
-    width: 550px;
+    padding: 10px 20px;
+    max-width: 550px;
     margin: 0 auto;
 }
 
-h2{
+h2 {
     font-size: 200%;
     font-family: 'Courier New', Courier, monospace;
     border: 5px;
-    border-color: rgb(187, 187, 187);
+    border-color: rgb(27, 161, 194);
     border-radius: 10px;
     border-style: outset;
     padding: 5px 10px;
     width: 100px;
+    display: block;
 }
 
-p{
-    font-size: 120%;
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 10px;
+}
+
+img.photo {
+    max-width: 30%;
+    display: block;
+    margin: 10px auto;
+    border: 5px;
+    border-color: rgb(27, 161, 194);
+    border-radius: 10px;
+    border-style: outset;
+
+}
+
+p {
+    font-size: 150%;
     font-family: 'Courier New', Courier, monospace;
     display: block;
     justify-content: start;
     border: 5px;
-    border-color: rgb(187, 187, 187);
+    border-color: rgb(27, 161, 194);
     border-radius: 10px;
     border-style: outset;
     padding: 5px 10px;
